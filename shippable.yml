@@ -16,5 +16,6 @@ before_install:
 script:
   - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests/calculator_test.php
 
-
+build_image: 
+  - shippableimages/ubuntu1204_php
       
